@@ -1,5 +1,5 @@
 body {
-    background: url(../images/Background.png) no-repeat 50% 50%;
+    background: linear-gradient(0deg, #2d3755 0%, #232b42 90%);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -7,6 +7,7 @@ body {
     margin: 0;
 
 }
+
 
 /*----------Shapes------------*/
 
@@ -16,34 +17,26 @@ body {
     position: relative;
     height: 20vh;
     min-height: calc(140px + 6vw);
-    width: 100%;
+    width: 90%;
     overflow: visible;
     background: rgba(255, 255, 255, 0.4);
     clip-path: polygon(0 15vw, 100% 0%, 100% calc(100% - 15vw), 0 100%);
 }
 
 .about_shape {
-    margin-top: 50px;
-    margin-bottom: -75px;
-    position: relative;
+    border-radius: 0px 20px 20px 0px;
     height: 50vh;
-    min-height: calc(140px + 6vw);
-    width: 100%;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.4);
-    clip-path: polygon(0 0vw, 100% 0%, 100% calc(100% - 15vw), 0 100%);
+    width: 90%;
+    background: linear-gradient(270deg, #353344 0%, #282633 90%);
 }
 
 .github_shape {
-    margin-top: -75px;
-    margin-bottom: 0px;
     position: relative;
     height: 50vh;
     min-height: calc(140px + 6vw);
-    width: 100%;
+    width: 75%;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.4);
-    clip-path: polygon(0 15vw, 100% 0%, 100% 100%, 0 100%);
 }
 
 .footer_shape {
@@ -64,43 +57,23 @@ body {
     );
 }
 /*----------End Shapes------------*/
+#Top {
+    height: 140px;
+    position: relative;
+}
+
+#Home {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .title {
     color: ghostwhite;
-}
-
-.Navbar {
-    top: 0;
-    background-color: black;
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    height: 37px;
-}
-.Navbar a {
-    font-size: 30px;
-    padding: 0px 16px;
-    text-decoration: none;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    width: 100%;
 }
 
-.Navbar a:hover {
-    background-color: #f4f4f4;
-    color: black;
-    font-weight: bold;
-}
-
-.Navbar a.active {
-    background-color: darkgray;
-}
-
-.title {
-    margin-top: 50px;
-}
-
-.about_container {
-    
-}
 
 .github_container {
     margin-top: 100px;
@@ -116,6 +89,7 @@ body {
 }
 
 h1 {
+    color: white;
     padding-left: 20px;
     letter-spacing: 1px;
     text-align: center;
@@ -130,6 +104,7 @@ h1:hover {
 */    
 
 p {
+    color: #75747c;
     padding-left: 30px;
     letter-spacing: 1px;
     font-size: 20px;
