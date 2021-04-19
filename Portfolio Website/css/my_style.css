@@ -34,15 +34,22 @@ body {
 }
 
 #About {
-    height: 200px;
+    height: 400px;
     position: relative;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #GitHub {
     height: 500px;
     position: relative;
     margin-top: 50px;
+    width: 90%;
+}
+
+#Videos {
+    margin-top: 50px;
+    height: 600px;
 }
 
 .title {
@@ -50,6 +57,13 @@ body {
     font-size: 50px;
     text-align: left;
     width: 100%;
+}
+
+#title_line {
+    width: 50%;
+    height: 3px;
+    background: rgb(97,97,221);
+    background: linear-gradient(90deg, rgb(97, 97, 221) 40%, rgba(97,97,221,0) 100%);
 }
 
 #about_container {
@@ -62,6 +76,10 @@ body {
     
 }
 
+#Contact {
+    margin-top: 50px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -72,7 +90,7 @@ body {
   }
 
 #github_container {
-    width: 90%;
+    
 }
 
 
@@ -116,6 +134,14 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+#ThreeDVid {
+    display: none;
+}
+
+#FXVid {
+    display: none;
+}
+
 .footer_font {
     color: ghostwhite;
 }
@@ -143,7 +169,7 @@ input[type=text] {
 }
 
 input[type=submit]:hover {
-    background-color: darkturquoise;
+    background-color: #6161dd;
     transform: scale(1.1);
     transition: transform 1.5s;
 }
