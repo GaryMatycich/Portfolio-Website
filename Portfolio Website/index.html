@@ -21,6 +21,7 @@
                     <div class="navbar-nav">
                     <a class="nav-link px-5" aria-current="page" href="#About">About</a>
                     <a class="nav-link px-5" href="#GitHub">GitHub</a>
+                    <a class="nav-link px-5" href="#Videos">3d/VFX</a>
                     <a class="nav-link px-5" href="#Contact">Contact</a>
                     </div>
                 </div>
@@ -40,83 +41,78 @@
         <!-------------End Header---------->
         <!---------------About------------->
         <div id="About">
-            <div id="about_container">
-                <div class="about_shape">
-                    <div class="grid-container">
-                        <div class="grid-item">
-                            <h1 class="left">About</h1>
-                            <p class="left">
-                                I am a .NET developer, game artist, and hockey player. I have 10+ years of experience<br> working on tech in many industries like 3d animation and machine programming.
-                                <br>Currently I am enrolled in The Tech Academys C# .NET program.
-                                <br>I am trained and experienced in the following web and programming languages:
-                                <br>HTML, CSS, JavaScript, SQL, and C#.
-                            </p>
-                        </div>
-                        <div class="grid-item">
-                            <img src="./images/Portrait_placeholder.jpg" class="img-fluid" alt="Portrait of Gary">
-                        </div>
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-8">
+                        <h1>About</h1>
+                        <p class="text-start">
+                            I am a .NET developer, game artist, and hockey player. I have 10+ years of experience
+                            <br> working on tech in many industries like 3d animation and machine automation.
+                            <br>In 2021 I graduated from The Tech Academys C#/.NET program.
+                            <br>While there I trained in the following languages HTML, CSS, JavaScript, SQL, and C#.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="./images/Portrait.jpg" class="img-fluid" alt="Portrait of Gary">
                     </div>
                 </div>
+                <div id=title_line_2></div>
             </div>
         </div>
         <!------------End About------------->
         <!---------------Github------------->
         <div id="GitHub">
-            <div class="github_shape">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col">
-                            <a href="https://www.linkedin.com/in/gary-matycich/" target="_blank">
-                                <img src="./images/174857.png" height="400" width="400">
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="https://github.com/GaryMatycich" target="_blank">
-                                <img src="./images/GitHub.png" height="400" width="400">
-                            </a>
-                        </div>
-                        <div class="col">
-                            <h1 class="right">Github</h1>
-                            <p class="right">You can view my coding projects on my GitHub profile here:</p>
-                            <p class="right"><a href="https://github.com/GaryMatycich" target="_blank">Gary Matycich's Github</a></p>
-                        </div>
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col">
+                        <a href="https://www.linkedin.com/in/gary-matycich/" target="_blank">
+                            <img src="./images/174857.png" class="img-fluid" height="300" width="300">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://github.com/GaryMatycich" target="_blank">
+                            <img src="./images/GitHub.png" class="img-fluid" height="300" width="300">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <h1 class="text-end">Github</h1>
+                        <p class="text-end">Here you can find my GitHub full of past projects and code summarys.</p>
+                        <p class="text-end"><a href="https://github.com/GaryMatycich" target="_blank">Gary Matycich's Github</a></p>
+                        <p class="text-end">Along with that is also my Linkedin that contains information on other tech jobs I have had and references from past coworkers.</p>
+                        <p class="text-end"><a href="https://www.linkedin.com/in/gary-matycich/" target="_blank">Gary Matycich's Linkedin</a></p>
                     </div>
                 </div>
             </div>
         </div>
         <!-------------End Github----------->
+        <!---------------Videos------------->
         <div id="Videos">
-            <div class="container">
+            <div class="container mt-5 mb-5">
                 <div class="row">
-                    <h1>Videos</h1>
+                    <h1>3d and VFX work</h1>
                 </div>
-
+                <p class="text-start">
+                    Before I began coding I was a game artist that worked on dozens of games for consoles, mobile and VR.
+                    <br>Below are my past demo reels that show some of the characters and animations I built for clients like
+                    <br>Dreamworks, The Void, and HighRez studios.
+                </p>
                 <div class="row">
                     <div class="col">
-                        <button onclick="openThreeDVid()" class="btn btn-primary btn-lg" style="background-color: #6161dd!important;">3d Art</button>
-                        <div class="Video-popup" id="ThreeDVid">
-                            <div class="card" style="width: 640px;">
-                                <iframe src="https://player.vimeo.com/video/372553553" class="card-img-top" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                                <p><a href="https://vimeo.com/372553553">Gary Matycich 2019 3d portfolio</a> from <a href="https://vimeo.com/user53558470">Gary Matycich</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-                                <button type="button" class="btn btn-danger" onclick="closeThreeDVid()">CLOSE</button>
-                            </div>
+                        <div>
+                            <iframe src="https://player.vimeo.com/video/372553553" class="card-img-top" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col">
-                        <button onclick="openFXVid()" class="btn btn-primary btn-lg" style="background-color: #6161dd!important;">FX Animation</button>
-                        <div class="Video-popup" id="FXVid">
-                            <div class="card" style="width: 640px;">
-                                <iframe src="https://player.vimeo.com/video/171617206" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                                <p><a href="https://vimeo.com/171617206">Gary Matycich Game FX demo reel 2016</a> from <a href="https://vimeo.com/user53558470">Gary Matycich</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-                                <button type="button" class="btn btn-danger" onclick="closeFXVid()">CLOSE</button>
-                            </div>
+                        <div>
+                            <iframe src="https://player.vimeo.com/video/171617206" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </div>    
         </div>
+        <!---------------End Videos------------->
         <!-------------Contact-------------->
-        <div id="Contact">
+        <div id="Contact" class="mt-5">
             <div class="form_container">
                 <h1>Contact</h1>
                 <form action="https://formspree.io/f/xlearkrp" method="POST">
@@ -138,7 +134,7 @@
 
     <footer>
         <div>
-            <p class="footer_font">Gary Matycich | 2021</p>
+            <p class="text-center">Gary Matycich | 2021</p>
         </div>
     </footer>
     <script src="./js/my_js.js"></script>
